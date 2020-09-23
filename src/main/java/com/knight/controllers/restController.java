@@ -15,4 +15,9 @@ public class restController {
         return new AjaxResponse(200, "hello world");
     }
 
+    @GetMapping(path = "/hello")
+    public AjaxResponse sayhi() {
+        return new AjaxResponse(200, "你好,世界");
+    }
+
 }
