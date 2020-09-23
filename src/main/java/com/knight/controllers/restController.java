@@ -12,7 +12,7 @@ public class restController {
 
     @GetMapping(path = "/hello")
     public AjaxResponse hello(){
-        return new AjaxResponse();
+        return new AjaxResponse(200, "hello world");
     }
 
 }
