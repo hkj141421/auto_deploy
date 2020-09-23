@@ -20,4 +20,9 @@ public class restController {
         return new AjaxResponse(200, "你好,世界");
     }
 
+    @GetMapping(path = "/version")
+    public AjaxResponse doc(){
+        return new AjaxResponse(200,"系统版本:1.0.0",null);
+    }
+
 }
